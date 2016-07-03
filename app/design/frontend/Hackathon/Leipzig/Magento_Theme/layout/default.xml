@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+    </head>
+    <body>
+        <referenceBlock name="register-link" remove="true"/>
+        <referenceContainer name="customer.login.container">
+            <referenceBlock name="customer.new" remove="true"/>
+        </referenceContainer>
+        <referenceContainer name="footer_links" remove="true"/>
+        <referenceContainer name="copyright" remove="true"/>
+        <referenceContainer name="report.bugs" remove="true"/>
+        <referenceContainer name="footer-container">
+            <block class="Magento\Cms\Block\Block" name="footer_block_1" htmlTag="div" htmlClass="first">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">footer_block_1</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Cms\Block\Block" name="footer_block_2" htmlTag="div" htmlClass="second">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">footer_block_2</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Cms\Block\Block" name="footer_block_3" htmlTag="div" htmlClass="third">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">footer_block_3</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Cms\Block\Block" name="footer_block_4" htmlTag="div" htmlClass="last">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">footer_block_4</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
