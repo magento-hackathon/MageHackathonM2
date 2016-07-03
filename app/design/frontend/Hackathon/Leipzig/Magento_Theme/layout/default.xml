@@ -4,10 +4,6 @@
     <head>
     </head>
     <body>
-        <referenceBlock name="register-link" remove="true"/>
-        <referenceContainer name="customer.login.container">
-            <referenceBlock name="customer.new" remove="true"/>
-        </referenceContainer>
         <referenceContainer name="footer_links" remove="true"/>
         <referenceContainer name="copyright" remove="true"/>
         <referenceContainer name="report.bugs" remove="true"/>
