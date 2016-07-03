@@ -117,13 +117,6 @@ $_helper = $this->helper('Magento\Catalog\Helper\Output');
                                     </a>
                                 </div>
                             </div>
-                            <?php if ($showDescription):?>
-                                <div class="product description product-item-description">
-                                    <?php /* @escapeNotVerified */ echo $_helper->productAttribute($_product, $_product->getShortDescription(), 'short_description') ?>
-                                    <a href="<?php /* @escapeNotVerified */ echo $_product->getProductUrl() ?>" title="<?php /* @escapeNotVerified */ echo $_productNameStripped ?>"
-                                       class="action more"><?php /* @escapeNotVerified */ echo __('Learn More') ?></a>
-                                </div>
-                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
