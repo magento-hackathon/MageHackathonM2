@@ -48,17 +48,6 @@ $_helper = $this->helper('Magento\Catalog\Helper\Output');
             <?php foreach ($_productCollection as $_product): ?>
                 <?php /* @escapeNotVerified */ echo($iterator++ == 1) ? '<li class="item product product-item">' : '</li><li class="item product product-item">' ?>
                 <div class="product-item-info" data-container="product-grid">
-                    <?php
-                    $productImage = $block->getImage($_product, $image);
-                    if ($pos != null) {
-                        $position = ' style="left:' . $productImage->getWidth() . 'px;'
-                            . 'top:' . $productImage->getHeight() . 'px;"';
-                    }
-                    ?>
-                    <?php // Product Image ?>
-                    <a href="<?php /* @escapeNotVerified */ echo $_product->getProductUrl() ?>" class="product photo product-item-photo" tabindex="-1">
-                        <?php echo $productImage->toHtml(); ?>
-                    </a>
                     <div class="product details product-item-details">
                         <?php
                             $_productNameStripped = $block->stripTags($_product->getName(), null, true);
