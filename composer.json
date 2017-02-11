@@ -32,7 +32,10 @@
     "magento/module-swatches-sample-data": "100.1.*",
     "magento/sample-data-media": "100.1.*",
     "magento/module-offline-shipping-sample-data": "100.1.*",
-    "firegento/magesetup2":"dev-master"
+    "firegento/magesetup2":"dev-master",
+    "hackathon/leipzig": "dev-master",
+    "mageplaza/magento-2-social-login" : "dev-master",
+    "splendidinternet/mage2-locale-de-de" : "dev-master"
   },
   "require-dev": {
     "phpunit/phpunit": "4.1.0",
