@@ -22,4 +22,6 @@ Nice idea would be to create an attribute with a custom renderer, which allowes 
 
 
 #### Used themes and modules:
-[Mage Hackathon Theme](https://github.com/magento-hackathon/mage-hackathon-de-m2-theme)
+* [Mage Hackathon Theme](https://github.com/magento-hackathon/mage-hackathon-de-m2-theme)
+* [mageplaza/magento-2-social-login](https://github.com/mageplaza/Magento-2-Social-Login-Extension)
+* [splendidinternet/mage2-locale-de-de](https://github.com/splendidinternet/Magento2_German_LocalePack_de_DE)
