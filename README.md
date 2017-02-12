@@ -10,13 +10,16 @@ The only filter on category page allows to show either passed or upcoming events
 Nice idea would be to create an attribute with a custom renderer, which allowes to show maps (google or osm).
 
 ####Modules to develop:
- - ideas (a guestbook by its structure)
+* ideas (a guestbook by its structure)
 
 
 ####List of things to improve
 * Not sorted passed events: hard to find anything. Shoud be sorted by date.
-* Unability to order discounted and normal tickets in one purchase
 * The page with ideas has no pagination
+
+####Cool ideas
+* List of participants
+* Backend: Statistic of attribut in Backend: for example t-shirt sizes
 
 
 #### Used themes and modules:
@@ -27,7 +30,6 @@ Nice idea would be to create an attribute with a custom renderer, which allowes 
 * [Payone](https://github.com/PAYONE-GmbH/magento-2)
 
 #### Data Migration:
-
 Install magento data migration tool
 
 `composer require  magento/data-migration-tool:2.1.4` for magento2 2.1.4
