@@ -107,14 +107,14 @@
 <crypt_key>981c105917b2b6dc32ab98bf306a8f75</crypt_key>
         <map_file>etc/ce-to-ce/1.8.1.0/map.xml</map_file>
         <eav_map_file>etc/ce-to-ce/map-eav.xml</eav_map_file>
-        <eav_document_groups_file>etc/ce-to-ce/eav-document-groups.xml</eav_document_groups_file>
+        <eav_document_groups_file>etc/ce-to-ce/eav-document-groups.xml.dist</eav_document_groups_file>
         <eav_attribute_groups_file>etc/ce-to-ce/eav-attribute-groups.xml</eav_attribute_groups_file>
-        <log_map_file>etc/ce-to-ce/map-log.xml</log_map_file>
+        <log_map_file>etc/ce-to-ce/map-log.xml.dist</log_map_file>
         <log_document_groups_file>etc/ce-to-ce/log-document-groups.xml.dist</log_document_groups_file>
         <settings_map_file>etc/ce-to-ce/settings.xml.dist</settings_map_file>
-        <customer_map_file>etc/ce-to-ce/map-customer.xml</customer_map_file>
-        <customer_document_groups_file>etc/ce-to-ce/customer-document-groups.xml</customer_document_groups_file>
-        <customer_attribute_groups_file>etc/ce-to-ce/customer-attribute-groups.xml</customer_attribute_groups_file>
+        <customer_map_file>etc/ce-to-ce/map-customer.xml.dist</customer_map_file>
+        <customer_document_groups_file>etc/ce-to-ce/customer-document-groups.xml.dist</customer_document_groups_file>
+        <customer_attribute_groups_file>etc/ce-to-ce/customer-attribute-groups.xml.dist</customer_attribute_groups_file>
         <delta_document_groups_file>etc/ce-to-ce/deltalog.xml.dist</delta_document_groups_file>
         <order_grids_document_groups_file>etc/ce-to-ce/order-grids-document-groups.xml.dist</order_grids_document_groups_file>
         <map_document_groups>etc/ce-to-ce/map-document-groups.xml.dist</map_document_groups>
