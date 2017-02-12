@@ -8,6 +8,41 @@
 <map xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="../../map.xsd">
     <source>
         <document_rules>
+            <!-- kkrieger -->
+            <ignore>
+                <document>checkout_agreement</document>
+            </ignore>
+            <ignore>
+                <document>github_confirmation</document>
+            </ignore>
+            <ignore>
+                <document>googlecheckout_notification</document>
+            </ignore>
+            <ignore>
+                <document>permission_variable</document>
+            </ignore>
+            <ignore>
+                <document>permission_block</document>
+            </ignore>
+            <ignore>
+                <document>payone_transaction</document>
+            </ignore>
+            <ignore>
+                <document>payone_protocol_transactionstatus</document>
+            </ignore>
+            <ignore>
+                <document>payone_protocol_api</document>
+            </ignore>
+            <ignore>
+                <document>payone_config_payment_method</document>
+            </ignore>
+            <ignore>
+                <document>newsletter_subscriber_status</document>
+            </ignore>
+            <ignore>
+                <document>hackathonwebsite_projectidea_projectidea</document>
+            </ignore>
+            <!--end kkrieger -->
             <ignore>
                 <document>googleshopping_attributes</document>
             </ignore>
@@ -26,9 +61,6 @@
             <ignore>
                 <document>sales_flat_order_grid</document>
             </ignore>
-		<ignore>
-		<document>sales_flat_order</document>
-</ignore>
             <ignore>
                 <document>sales_flat_shipment_grid</document>
             </ignore>
@@ -521,12 +553,313 @@
             <ignore>
                 <document>googlebase_types</document>
             </ignore>
+            <rename>
+                <document>catalogsearch_query</document>
+                <to>search_query</to>
+            </rename>
+            <rename>
+                <document>core_variable</document>
+                <to>variable</to>
+            </rename>
+            <rename>
+                <document>core_variable_value</document>
+                <to>variable_value</to>
+            </rename>
+            <rename>
+                <document>core_email_template</document>
+                <to>email_template</to>
+            </rename>
+            <rename>
+                <document>core_store</document>
+                <to>store</to>
+            </rename>
+            <rename>
+                <document>core_store_group</document>
+                <to>store_group</to>
+            </rename>
+            <rename>
+                <document>core_translate</document>
+                <to>translation</to>
+            </rename>
+            <rename>
+                <document>core_session</document>
+                <to>session</to>
+            </rename>
+            <rename>
+                <document>coupon_aggregated</document>
+                <to>salesrule_coupon_aggregated</to>
+            </rename>
+            <rename>
+                <document>coupon_aggregated_order</document>
+                <to>salesrule_coupon_aggregated_order</to>
+            </rename>
+            <rename>
+                <document>coupon_aggregated_updated</document>
+                <to>salesrule_coupon_aggregated_updated</to>
+            </rename>
+            <rename>
+                <document>sales_flat_order</document>
+                <to>sales_order</to>
+            </rename>
+            <rename>
+                <document>sales_flat_creditmemo</document>
+                <to>sales_creditmemo</to>
+            </rename>
+            <rename>
+                <document>sales_flat_creditmemo_comment</document>
+                <to>sales_creditmemo_comment</to>
+            </rename>
+            <rename>
+                <document>sales_flat_creditmemo_item</document>
+                <to>sales_creditmemo_item</to>
+            </rename>
+            <rename>
+                <document>sales_flat_invoice</document>
+                <to>sales_invoice</to>
+            </rename>
+            <rename>
+                <document>sales_flat_invoice_comment</document>
+                <to>sales_invoice_comment</to>
+            </rename>
+            <rename>
+                <document>sales_flat_invoice_item</document>
+                <to>sales_invoice_item</to>
+            </rename>
+            <rename>
+                <document>sales_flat_order_address</document>
+                <to>sales_order_address</to>
+            </rename>
+            <rename>
+                <document>sales_flat_order_item</document>
+                <to>sales_order_item</to>
+            </rename>
+            <rename>
+                <document>sales_flat_order_payment</document>
+                <to>sales_order_payment</to>
+            </rename>
+            <rename>
+                <document>sales_flat_order_status_history</document>
+                <to>sales_order_status_history</to>
+            </rename>
+            <rename>
+                <document>sales_flat_quote</document>
+                <to>quote</to>
+            </rename>
+            <rename>
+                <document>sales_flat_quote_address</document>
+                <to>quote_address</to>
+            </rename>
+            <rename>
+                <document>sales_flat_quote_address_item</document>
+                <to>quote_address_item</to>
+            </rename>
+            <rename>
+                <document>sales_flat_quote_item</document>
+                <to>quote_item</to>
+            </rename>
+            <rename>
+                <document>sales_flat_quote_item_option</document>
+                <to>quote_item_option</to>
+            </rename>
+            <rename>
+                <document>sales_flat_quote_payment</document>
+                <to>quote_payment</to>
+            </rename>
+            <rename>
+                <document>sales_flat_quote_shipping_rate</document>
+                <to>quote_shipping_rate</to>
+            </rename>
+            <rename>
+                <document>sales_flat_shipment</document>
+                <to>sales_shipment</to>
+            </rename>
+            <rename>
+                <document>sales_flat_shipment_comment</document>
+                <to>sales_shipment_comment</to>
+            </rename>
+            <rename>
+                <document>sales_flat_shipment_item</document>
+                <to>sales_shipment_item</to>
+            </rename>
+            <rename>
+                <document>sales_flat_shipment_track</document>
+                <to>sales_shipment_track</to>
+            </rename>
+            <rename>
+                <document>core_directory_storage</document>
+                <to>media_storage_directory_storage</to>
+            </rename>
+            <rename>
+                <document>core_file_storage</document>
+                <to>media_storage_file_storage</to>
+            </rename>
+            <rename>
+                <document>sales_billing_agreement</document>
+                <to>paypal_billing_agreement</to>
+            </rename>
+            <rename>
+                <document>sales_billing_agreement_order</document>
+                <to>paypal_billing_agreement_order</to>
+            </rename>
         </document_rules>
         <field_rules>
+            <move>
+                <field>cms_page.root_template</field>
+                <to>cms_page.page_layout</to>
+            </move>
+            <move>
+                <field>sales_flat_order.hidden_tax_amount</field>
+                <to>sales_order.discount_tax_compensation_amount</to>
+            </move>
+            <move>
+                <field>sales_flat_order.base_hidden_tax_amount</field>
+                <to>sales_order.base_discount_tax_compensation_amount</to>
+            </move>
+            <move>
+                <field>sales_flat_order.shipping_hidden_tax_amount</field>
+                <to>sales_order.shipping_discount_tax_compensation_amount</to>
+            </move>
+            <move>
+                <field>sales_flat_order.base_shipping_hidden_tax_amnt</field>
+                <to>sales_order.base_shipping_discount_tax_compensation_amnt</to>
+            </move>
+            <move>
+                <field>sales_flat_order.hidden_tax_invoiced</field>
+                <to>sales_order.discount_tax_compensation_invoiced</to>
+            </move>
+            <move>
+                <field>sales_flat_order.base_hidden_tax_invoiced</field>
+                <to>sales_order.base_discount_tax_compensation_invoiced</to>
+            </move>
+            <move>
+                <field>sales_flat_order.hidden_tax_refunded</field>
+                <to>sales_order.discount_tax_compensation_refunded</to>
+            </move>
+            <move>
+                <field>sales_flat_order.base_hidden_tax_refunded</field>
+                <to>sales_order.base_discount_tax_compensation_refunded</to>
+            </move>
+            <move>
+                <field>sales_flat_creditmemo.hidden_tax_amount</field>
+                <to>sales_creditmemo.discount_tax_compensation_amount</to>
+            </move>
+            <move>
+                <field>sales_flat_creditmemo.base_hidden_tax_amount</field>
+                <to>sales_creditmemo.base_discount_tax_compensation_amount</to>
+            </move>
+            <move>
+                <field>sales_flat_creditmemo.shipping_hidden_tax_amount</field>
+                <to>sales_creditmemo.shipping_discount_tax_compensation_amount</to>
+            </move>
+            <move>
+                <field>sales_flat_creditmemo.base_shipping_hidden_tax_amnt</field>
+                <to>sales_creditmemo.base_shipping_discount_tax_compensation_amnt</to>
+            </move>
+            <move>
+                <field>sales_flat_creditmemo_item.hidden_tax_amount</field>
+                <to>sales_creditmemo_item.discount_tax_compensation_amount</to>
+            </move>
+            <move>
+                <field>sales_flat_creditmemo_item.base_hidden_tax_amount</field>
+                <to>sales_creditmemo_item.base_discount_tax_compensation_amount</to>
+            </move>
+            <move>
+                <field>sales_flat_invoice.hidden_tax_amount</field>
+                <to>sales_invoice.discount_tax_compensation_amount</to>
+            </move>
+            <move>
+                <field>sales_flat_invoice.base_hidden_tax_amount</field>
+                <to>sales_invoice.base_discount_tax_compensation_amount</to>
+            </move>
+            <move>
+                <field>sales_flat_invoice.shipping_hidden_tax_amount</field>
+                <to>sales_invoice.shipping_discount_tax_compensation_amount</to>
+            </move>
+            <move>
+                <field>sales_flat_invoice.base_shipping_hidden_tax_amnt</field>
+                <to>sales_invoice.base_shipping_discount_tax_compensation_amnt</to>
+            </move>
+            <move>
+                <field>sales_flat_invoice_item.hidden_tax_amount</field>
+                <to>sales_invoice_item.discount_tax_compensation_amount</to>
+            </move>
+            <move>
+                <field>sales_flat_invoice_item.base_hidden_tax_amount</field>
+                <to>sales_invoice_item.base_discount_tax_compensation_amount</to>
+            </move>
+            <move>
+                <field>sales_flat_order_item.hidden_tax_amount</field>
+                <to>sales_order_item.discount_tax_compensation_amount</to>
+            </move>
+            <move>
+                <field>sales_flat_order_item.base_hidden_tax_amount</field>
+                <to>sales_order_item.base_discount_tax_compensation_amount</to>
+            </move>
+            <move>
+                <field>sales_flat_order_item.hidden_tax_invoiced</field>
+                <to>sales_order_item.discount_tax_compensation_invoiced</to>
+            </move>
+            <move>
+                <field>sales_flat_order_item.base_hidden_tax_invoiced</field>
+                <to>sales_order_item.base_discount_tax_compensation_invoiced</to>
+            </move>
+            <move>
+                <field>sales_flat_order_item.hidden_tax_refunded</field>
+                <to>sales_order_item.discount_tax_compensation_refunded</to>
+            </move>
+            <move>
+                <field>sales_flat_order_item.base_hidden_tax_refunded</field>
+                <to>sales_order_item.base_discount_tax_compensation_refunded</to>
+            </move>
+            <move>
+                <field>sales_flat_order_item.hidden_tax_canceled</field>
+                <to>sales_order_item.discount_tax_compensation_canceled</to>
+            </move>
+            <move>
+                <field>sales_flat_order_payment.cc_last4</field>
+                <to>sales_order_payment.cc_last_4</to>
+            </move>
+            <move>
+                <field>sales_flat_quote_payment.cc_last4</field>
+                <to>quote_payment.cc_last_4</to>
+            </move>
+            <move>
+                <field>sales_flat_quote_address.hidden_tax_amount</field>
+                <to>quote_address.discount_tax_compensation_amount</to>
+            </move>
+            <move>
+                <field>sales_flat_quote_address.base_hidden_tax_amount</field>
+                <to>quote_address.base_discount_tax_compensation_amount</to>
+            </move>
+            <move>
+                <field>sales_flat_quote_address.shipping_hidden_tax_amount</field>
+                <to>quote_address.shipping_discount_tax_compensation_amount</to>
+            </move>
+            <move>
+                <field>sales_flat_quote_address.base_shipping_hidden_tax_amnt</field>
+                <to>quote_address.base_shipping_discount_tax_compensation_amnt</to>
+            </move>
+            <move>
+                <field>sales_flat_quote_address_item.hidden_tax_amount</field>
+                <to>quote_address_item.discount_tax_compensation_amount</to>
+            </move>
+            <move>
+                <field>sales_flat_quote_address_item.base_hidden_tax_amount</field>
+                <to>quote_address_item.base_discount_tax_compensation_amount</to>
+            </move>
+            <move>
+                <field>sales_flat_quote_item.hidden_tax_amount</field>
+                <to>quote_item.discount_tax_compensation_amount</to>
+            </move>
+            <move>
+                <field>sales_flat_quote_item.base_hidden_tax_amount</field>
+                <to>quote_item.base_discount_tax_compensation_amount</to>
+            </move>
             <transform>
                 <field>catalog_category_entity_varchar.value</field>
                 <handler class="\Migration\Handler\ConvertEavValue">
-                    <param name="map" value="[one_column:1column;two_columns_left:2columns-left;two_columns_right:2columns-right;three_columns:3columns]"/>
+                    <param name="map"
+                           value="[one_column:1column;two_columns_left:2columns-left;two_columns_right:2columns-right;three_columns:3columns]"/>
                     <param name="attributeCode" value="page_layout"/>
                 </handler>
             </transform>
@@ -541,21 +874,22 @@
             <transform>
                 <field>catalog_category_entity_varchar.value</field>
                 <handler class="\Migration\Handler\SetValueAttributeCondition">
-                     <param name="attributeCode" value="custom_design"/>
-                     <param name="value" value="null"/>
+                    <param name="attributeCode" value="custom_design"/>
+                    <param name="value" value="null"/>
                 </handler>
             </transform>
             <transform>
                 <field>catalog_category_entity_text.value</field>
                 <handler class="\Migration\Handler\SetValueAttributeCondition">
-                     <param name="attributeCode" value="custom_layout_update"/>
-                     <param name="value" value="null"/>
+                    <param name="attributeCode" value="custom_layout_update"/>
+                    <param name="value" value="null"/>
                 </handler>
             </transform>
             <transform>
                 <field>catalog_product_entity_varchar.value</field>
                 <handler class="\Migration\Handler\ConvertEavValue">
-                    <param name="map" value="[one_column:1column;two_columns_left:2columns-left;two_columns_right:2columns-right;three_columns:3columns]"/>
+                    <param name="map"
+                           value="[one_column:1column;two_columns_left:2columns-left;two_columns_right:2columns-right;three_columns:3columns]"/>
                     <param name="attributeCode" value="page_layout"/>
                 </handler>
             </transform>
@@ -570,29 +904,30 @@
             <transform>
                 <field>cms_page.root_template</field>
                 <handler class="\Migration\Handler\Convert">
-                    <param name="map" value="[one_column:1column;two_columns_left:2columns-left;two_columns_right:2columns-right;three_columns:3columns]" />
-                    <param name="defaultValue" value="1column" />
+                    <param name="map"
+                           value="[one_column:1column;two_columns_left:2columns-left;two_columns_right:2columns-right;three_columns:3columns]"/>
+                    <param name="defaultValue" value="1column"/>
                 </handler>
             </transform>
             <transform>
                 <field>cms_block.content</field>
-                <handler class="\Migration\Handler\Placeholder" />
+                <handler class="\Migration\Handler\Placeholder"/>
             </transform>
             <transform>
                 <field>cms_page.content</field>
-                <handler class="\Migration\Handler\Placeholder" />
+                <handler class="\Migration\Handler\Placeholder"/>
             </transform>
             <transform>
                 <field>newsletter_template.template_text</field>
-                <handler class="\Migration\Handler\Placeholder" />
+                <handler class="\Migration\Handler\Placeholder"/>
             </transform>
             <transform>
                 <field>core_email_template.template_text</field>
-                <handler class="\Migration\Handler\Placeholder" />
+                <handler class="\Migration\Handler\Placeholder"/>
             </transform>
             <transform>
                 <field>widget_instance.instance_type</field>
-                <handler class="\Migration\Handler\ClassMap" />
+                <handler class="\Migration\Handler\ClassMap"/>
             </transform>
             <transform>
                 <field>catalogrule.conditions_serialized</field>
@@ -609,6 +944,22 @@
             <transform>
                 <field>salesrule.actions_serialized</field>
                 <handler class="\Migration\Handler\Rule\SerializedData"/>
+            </transform>
+            <transform>
+                <field>sales_flat_order_item.weee_tax_applied</field>
+                <handler class="Migration\Handler\SerializeToJson"/>
+            </transform>
+            <transform>
+                <field>sales_flat_quote_item.weee_tax_applied</field>
+                <handler class="Migration\Handler\SerializeToJson"/>
+            </transform>
+            <transform>
+                <field>sales_flat_creditmemo_item.weee_tax_applied</field>
+                <handler class="Migration\Handler\SerializeToJson"/>
+            </transform>
+            <transform>
+                <field>sales_flat_invoice_item.weee_tax_applied</field>
+                <handler class="Migration\Handler\SerializeToJson"/>
             </transform>
             <transform>
                 <field>catalog_product_entity_media_gallery.value_id</field>
@@ -648,6 +999,111 @@
             <ignore>
                 <field>sales_flat_order_payment.paybox_request_number</field>
             </ignore>
+            <ignore>
+                <field>sales_flat_order.payone_dunning_status</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order.payone_payment_method_type</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_customer_telephone</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_shipping_addressaddition</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_billing_addressaddition</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_customer_personalid</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_customer_gender</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_customer_dob</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_clearing_instructionnote</field>
+            </ignore>
+
+            <ignore>
+                <field>sales_flat_order_payment.payone_financing_type</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_safe_invoice_type</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_clearing_legalnote</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_clearing_duedate</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_clearing_reference</field>
+            </ignore>
+
+
+            <ignore>
+                <field>sales_flat_order_payment.payone_clearing_bank_country</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_clearing_bank_account</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_clearing_bank_code</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_clearing_bank_iban</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_clearing_bank_bic</field>
+            </ignore>
+
+            <ignore>
+                <field>sales_flat_order_payment.payone_clearing_bank_city</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_clearing_bank_name</field>
+            </ignore>
+
+            <ignore>
+                <field>sales_flat_order_payment.payone_pseudocardpan</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_sepa_bic</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_sepa_iban</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_bank_group</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_bank_code</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_account_owner</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_account_number</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_bank_country</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_onlinebanktransfer_type</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_payment_method_name</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_payment_method_type</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_config_payment_method_id</field>
+            </ignore>
+
             <ignore>
                 <field>weee_tax.entity_type_id</field>
             </ignore>
@@ -769,6 +1225,9 @@
                 <field>sales_flat_invoice.customer_id</field>
             </ignore>
             <ignore>
+                <field>sales_flat_invoice.payone_sequencenumber</field>
+            </ignore>
+            <ignore>
                 <field>sales_flat_invoice.invoice_status_id</field>
             </ignore>
             <ignore>
@@ -791,6 +1250,17 @@
             </ignore>
             <ignore>
                 <field>sales_flat_order.base_custbalance_amount</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order.payone_payment_method_type
+                </field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order.payone_dunning_status
+                </field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order.payone_transaction_status</field>
             </ignore>
             <ignore>
                 <field>sales_flat_order.currency_base_id</field>
@@ -855,6 +1325,94 @@
             <ignore>
                 <datatype>oauth_token.callback_url</datatype>
             </ignore>
+            <ignore>
+                <field>catalog_eav_attribute.is_visible_on_checkout</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_order_payment.payone_clearing_bank_accountholder</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_address.payone_protect_hash</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_address.payone_protect_date</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_address.payone_protect_score</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_address.payone_addresscheck_hash</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_address.payone_addresscheck_hash</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_address.payone_addresscheck_date</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_address.payone_addresscheck_score</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_address.payone_addresscheck_date</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_address.payone_addresscheck_date</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_payment.payone_config_payment_method_id</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_payment.payone_onlinebanktransfer_type</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_payment.payone_bank_country</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_payment.payone_account_number</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_payment.payone_account_owner</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_payment.payone_bank_code</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_payment.payone_bank_group</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_payment.payone_sepa_iban</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_payment.payone_sepa_bic</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_payment.payone_pseudocardpan</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_payment.payone_financing_type</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_payment.payone_safe_invoice_type</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_payment.payone_customer_dob</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_payment.payone_customer_gender</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_payment.payone_customer_personalid</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_payment.payone_billing_addressaddition</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_payment.payone_shipping_addressaddition</field>
+            </ignore>
+            <ignore>
+                <field>sales_flat_quote_payment.payone_customer_telephone</field>
+            </ignore>
+
         </field_rules>
     </source>
     <destination>
@@ -1115,6 +1673,15 @@
                 <document>admin_passwords</document>
             </ignore>
             <ignore>
+                <document>catalog_product_entity_media_gallery_value_to_entity</document>
+            </ignore>
+            <ignore>
+                <document>catalog_product_entity_media_gallery_value_video</document>
+            </ignore>
+            <ignore>
+                <document>catalog_product_entity_tier_price</document>
+            </ignore>
+            <ignore>
                 <document>customer_grid_flat</document>
             </ignore>
             <ignore>
@@ -1134,73 +1701,73 @@
             <transform>
                 <field>admin_user.interface_locale</field>
                 <handler class="\Migration\Handler\SetValue">
-                    <param name="value" value="en_US" />
+                    <param name="value" value="en_US"/>
                 </handler>
             </transform>
             <transform>
                 <field>cataloginventory_stock.website_id</field>
                 <handler class="\Migration\Handler\SetValue">
-                    <param name="value" value="0" />
+                    <param name="value" value="0"/>
                 </handler>
             </transform>
             <transform>
                 <field>cataloginventory_stock_item.website_id</field>
                 <handler class="\Migration\Handler\SetValue">
-                    <param name="value" value="0" />
+                    <param name="value" value="0"/>
                 </handler>
             </transform>
             <transform>
                 <field>rating.is_active</field>
                 <handler class="\Migration\Handler\SetValue">
-                    <param name="value" value="0" />
+                    <param name="value" value="0"/>
                 </handler>
             </transform>
             <transform>
                 <field>authorization_role.user_type</field>
                 <handler class="\Migration\Handler\SetValue">
-                    <param name="value" value="2" />
+                    <param name="value" value="2"/>
                 </handler>
             </transform>
             <transform>
                 <field>sales_order_tax_item.amount</field>
                 <handler class="\Migration\Handler\SetValue">
-                    <param name="value" value="0.0000" />
+                    <param name="value" value="0.0000"/>
                 </handler>
             </transform>
             <transform>
                 <field>sales_order_tax_item.base_amount</field>
                 <handler class="\Migration\Handler\SetValue">
-                    <param name="value" value="0.0000" />
+                    <param name="value" value="0.0000"/>
                 </handler>
             </transform>
             <transform>
                 <field>sales_order_tax_item.real_amount</field>
                 <handler class="\Migration\Handler\SetValue">
-                    <param name="value" value="0.0000" />
+                    <param name="value" value="0.0000"/>
                 </handler>
             </transform>
             <transform>
                 <field>sales_order_tax_item.real_base_amount</field>
                 <handler class="\Migration\Handler\SetValue">
-                    <param name="value" value="0.0000" />
+                    <param name="value" value="0.0000"/>
                 </handler>
             </transform>
             <transform>
                 <field>sales_order_tax_item.taxable_item_type</field>
                 <handler class="\Migration\Handler\SetValue">
-                    <param name="value" value="product" />
+                    <param name="value" value="product"/>
                 </handler>
             </transform>
             <transform>
                 <field>oauth_token.user_type</field>
                 <handler class="\Migration\Handler\SetValue">
-                    <param name="value" value="1" />
+                    <param name="value" value="1"/>
                 </handler>
             </transform>
             <transform>
                 <field>widget_instance.theme_id</field>
                 <handler class="\Migration\Handler\SetValue">
-                    <param name="value" value="3" />
+                    <param name="value" value="3"/>
                 </handler>
             </transform>
             <transform>
