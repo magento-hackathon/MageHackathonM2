@@ -24,6 +24,7 @@ Nice idea would be to create an attribute with a custom renderer, which allowes 
 * [mageplaza/magento-2-social-login](https://github.com/mageplaza/Magento-2-Social-Login-Extension)
 * [splendidinternet/mage2-locale-de-de](https://github.com/splendidinternet/Magento2_German_LocalePack_de_DE)
 * [MageSetup2](https://github.com/firegento/firegento-magesetup2)
+* [Payone](https://github.com/PAYONE-GmbH/magento-2)
 
 #### Data Migration:
 
