@@ -1696,6 +1696,15 @@
             <ignore>
                 <document>design_config_grid_flat</document>
             </ignore>
+            <ignore>
+                <document>mageplaza_social_customer</document>
+            </ignore>
+            <ignore>
+                <document>payone_checked_addresses</document>
+            </ignore>
+            <ignore>
+                <document>payone_protocol_transactionstatus</document>
+            </ignore>
         </document_rules>
         <field_rules>
             <transform>
@@ -1912,6 +1921,36 @@
             </ignore>
             <ignore>
                 <datatype>oauth_token.callback_url</datatype>
+            </ignore>
+            <ignore>
+                <field>sales_order.payone_txid</field>
+            </ignore>
+            <ignore>
+                <field>sales_order.payone_refnr</field>
+            </ignore>
+            <ignore>
+                <field>sales_order.payone_authmode</field>
+            </ignore>
+            <ignore>
+                <field>sales_order.payone_mode</field>
+            </ignore>
+            <ignore>
+                <field>sales_order.payone_mandate_id</field>
+            </ignore>
+            <ignore>
+                <field>payone_protocol_api.refnr</field>
+            </ignore>
+            <ignore>
+                <field>payone_protocol_api.txid</field>
+            </ignore>
+            <ignore>
+                <field>payone_protocol_api.timestamp</field>
+            </ignore>
+            <ignore>
+                <field>payone_protocol_api.requesttype</field>
+            </ignore>
+            <ignore>
+                <field>payone_protocol_api.responsestatus</field>
             </ignore>
         </field_rules>
     </destination>
