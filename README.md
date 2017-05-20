@@ -36,11 +36,11 @@ Nice idea would be to create an attribute with a custom renderer, which allowes 
 #### Data Migration:
 Install magento data migration tool
 
-`composer require  magento/data-migration-tool:2.1.4` for magento2 2.1.4
+`composer require  magento/data-migration-tool:2.1.6` for magento2 2.1.6
 
-Put `config.xml`and `map.xml` to `vendor/magento/data-migration-tool/ce-to-ce/1.8.1.0` folder
+Put `config.xml`and `map.xml` to `vendor/magento/data-migration-tool/etc/ce-to-ce/1.8.1.0` folder
 
-Put `class-map.xml` , `map-eav.xml` and `eav-attribute-groups.xml` to `vendor/magento/data-migration-tool/ce-to-ce` folder
+Put `class-map.xml` , `map-eav.xml` and `eav-attribute-groups.xml` to `vendor/magento/data-migration-tool/etc/ce-to-ce` folder
 
 On console:
 ```
