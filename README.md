@@ -42,13 +42,29 @@ Put `config.xml`and `map.xml` to `vendor/magento/data-migration-tool/etc/ce-to-c
 
 Put `class-map.xml` , `map-eav.xml` and `eav-attribute-groups.xml` to `vendor/magento/data-migration-tool/etc/ce-to-ce` folder
 
+**For local test**
+
+Create your DB-Dump from your old shop.
+
+Add following
+```
+INSERT INTO `eav_attribute` (`attribute_id`, `entity_type_id`, `attribute_code`, `attribute_model`, `backend_model`, `backend_type`, `backend_table`, `frontend_model`, `frontend_input`, `frontend_label`, `frontend_class`, `source_model`, `is_required`, `is_user_defined`, `default_value`, `is_unique`, `note`)
+VALUES
+    (121, 4, ‘enable_googlecheckout’, NULL, NULL, ‘int’, NULL, NULL, ‘select’, ‘Is Product Available for Purchase with Google Checkout’, NULL, ‘eav/entity_attribute_source_boolean’, 0, 0, ‘1’, 0, NULL);
+````
+Import DB
+
+**Now the migration**
+
+Change `<source>` and `<destination> in your config.xml
+
 On console:
 ```
 php bin/magento migrate:data vendor/magento/data-migration-tool/etc/ce-to-ce/1.8.1.0/config.xml
 ```
 
 ```
-php bin/magento migrate:settings vendor/magento/data-migration-tool/etc/ce-to-ce/1.8.1.0/config.xml`
+php bin/magento migrate:settings vendor/magento/data-migration-tool/etc/ce-to-ce/1.8.1.0/config.xml
 ```
 
 Maybe you have to remove some eav_attribute.attribute_id entries
