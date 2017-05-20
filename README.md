@@ -9,17 +9,18 @@ The only filter on category page allows to show either passed or upcoming events
 
 Nice idea would be to create an attribute with a custom renderer, which allowes to show maps (google or osm).
 
-####Modules to develop:
+#### Modules to develop:
 * ideas (a guestbook by its structure)
 
 
-####List of things to improve
+#### List of things to improve
 * Not sorted passed events: hard to find anything. Shoud be sorted by date.
 * The page with ideas has no pagination
 
-####Cool ideas
+#### Cool ideas
 * List of participants
 * Backend: Statistic of attribut in Backend: for example t-shirt sizes
+
 
 
 #### Used themes and modules:
