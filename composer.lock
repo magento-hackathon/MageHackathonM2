@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d7e48c6bc54672403d21a09a2b2bc452",
+    "content-hash": "4dabdd47eccc5008804d33c809929587",
     "packages": [
         {
             "name": "braintree/braintree_php",
@@ -5581,45 +5581,6 @@
                 "framework"
             ],
             "time": "2017-02-27T21:19:07+00:00"
-        },
-        {
-            "name": "mageplaza/core-m2",
-            "version": "1.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mageplaza/module-core.git",
-                "reference": "3f1a4d656f28099ea0569d8d9403e1074d452fc3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mageplaza/module-core/zipball/3f1a4d656f28099ea0569d8d9403e1074d452fc3",
-                "reference": "3f1a4d656f28099ea0569d8d9403e1074d452fc3",
-                "shasum": ""
-            },
-            "type": "magento2-module",
-            "autoload": {
-                "files": [
-                    "registration.php"
-                ],
-                "psr-4": {
-                    "Mageplaza\\Core\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "OSL-3.0",
-                "AFL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Mageplaza",
-                    "email": "hi@mageplaza.com",
-                    "homepage": "https://www.mageplaza.com",
-                    "role": "Leader"
-                }
-            ],
-            "description": "Mageplaza Core M2",
-            "time": "2017-04-12T08:07:22+00:00"
         },
         {
             "name": "mageplaza/magento-2-social-login",
