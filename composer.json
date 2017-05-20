@@ -16,7 +16,8 @@
     "hackathon/leipzig": "dev-master",
     "mageplaza/magento-2-social-login" : "dev-master",
     "splendidinternet/mage2-locale-de-de" : "dev-master",
-    "mageplaza/core-m2": "^1.0"
+    "mageplaza/core-m2": "^1.0",
+    "payone-gmbh/magento-2":"1.3.*"
   },
   "require-dev": {
     "phpunit/phpunit": "4.1.0",
